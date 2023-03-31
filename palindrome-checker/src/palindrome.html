@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Palindrome Challenge</title>
+  </head>
+
+  <body class="bg-gray-100">
+    <div class="mx-auto max-w-5xl bg-white">
+      <!-- Header -->
+
+      <nav class="bg-gray-100 shadow-md">
+        <div class="max-w-6xl mx-auto px-1">
+          <div class="flex justify-between">
+            <!-- Logo -->
+            <div>
+              <a
+                href="index.html"
+                class="flex items-center py-3 px-2 text-gray-700 hover:text-gray-900"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-green-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18.75 19.5l-7.5-7.5 7.5-7.5m-6 15L5.25 12l7.5-7.5"
+                  />
+                </svg>
+
+                <span class="font-bold text-green-600 uppercase"
+                  >Palindrome Checker</span
+                >
+
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-5 h-5 text-green-600"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Primary Nav -->
+
+            <div class="hidden md:flex items-center uppercase">
+              <a
+                href="#"
+                class="py-2 px-2 text-gray-700 font-bold hover:text-green-800"
+                >Le challenge</a
+              >
+              <a
+                href="https://github.com/cedric-charlesia/technical-tests/tree/master/palindrome-checker"
+                target="_blank"
+                class="py-2 px-2 text-gray-700 font-bold hover:text-green-800"
+                >Code Source</a
+              >
+            </div>
+
+            <!-- Mobile Nav -->
+
+            <div class="md:hidden flex items-center">
+              <button class="mobile-menu-button text-green-600">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu -->
+
+        <div class="mobile-menu hidden md:hidden uppercase">
+          <a href="#" class="block py-2 px-4 hover:bg-gray-200">Le challenge</a>
+          <a
+            href="https://github.com/cedric-charlesia/technical-tests/tree/master/palindrome-checker"
+            target="_blank"
+            class="block py-2 px-4 hover:bg-gray-200"
+            >Code Source</a
+          >
+        </div>
+      </nav>
+
+      <!-- Main content -->
+
+      <main class="px-5">
+        <div class="pt-5 pb-4 flex-col space-y-4">
+          <!-- Palindrome form -->
+          <div>
+            <form method="get" id="PalindromeForm">
+              <div
+                class="flex-col md:flex-row md:justify-center md:max-w-xl mx-auto"
+              >
+                <div>
+                  <label for="palindrome" class="font-bold"
+                    >Entrer un mot ou une phrase :
+                  </label>
+                  <input
+                    type="text"
+                    placeholder="exemple: kayak"
+                    id="palindrome"
+                    class="mt-2 block w-full text-slate-700"
+                    autofocus
+                    autocomplete="off"
+                  />
+                  <span class="palindrome-error text-red-700"></span>
+                </div>
+              </div>
+
+              <div
+                class="my-3 flex items-center justify-between font-bold md:flex-col md:max-w-sm gap-4 mx-auto md:gap-2"
+              >
+                <button
+                  id="resetPalindrome"
+                  type="reset"
+                  class="w-2/4 text-white bg-gray-400 hover:bg-gray-500 px-2 py-1 rounded-lg uppercase"
+                >
+                  Reset
+                </button>
+
+                <button
+                  id="submitPalindrome"
+                  class="w-2/4 text-white bg-green-600 hover:bg-green-500 px-2 py-1 rounded-lg uppercase"
+                >
+                  Vérifier
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <div id="result" class="text-center font-bold"></div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class=""></footer>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet" />
+    <link href="../dist/output.css" rel="stylesheet" />
+    <title>Fibonacci Challenge</title>
+</head>
+
+<body class="bg-gray-200">
+    <div class="mx-auto max-w-5xl bg-white">
+        <!-- Header -->
+
+        <nav class="shadow-md">
+            <div class="max-w-6xl mx-auto px-1">
+                <div class="flex justify-between">
+                    <!-- Logo -->
+                    <div>
+                        <a href="index.html" class="flex items-center py-3 px-2 text-gray-700 hover:text-gray-900">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6 text-cyan-600">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V13.5zm0 2.25h.008v.008H8.25v-.008zm0 2.25h.008v.008H8.25V18zm2.498-6.75h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V13.5zm0 2.25h.007v.008h-.007v-.008zm0 2.25h.007v.008h-.007V18zm2.504-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zm0 2.25h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V18zm2.498-6.75h.008v.008h-.008v-.008zm0 2.25h.008v.008h-.008V13.5zM8.25 6h7.5v2.25h-7.5V6zM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 002.25 2.25h10.5a2.25 2.25 0 002.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0012 2.25z" />
+                            </svg>
+
+                            <span class="font-bold text-cyan-600 uppercase">Fibo</span>
+
+                        </a>
+                    </div>
+
+                    <!-- Primary Nav -->
+
+                    <div class="hidden md:flex items-center uppercase">
+                        <a href="fibonacci.html" class="py-2 px-2 text-gray-700 font-bold hover:text-cyan-600">Le
+                            challenge</a>
+                        <a href="https://github.com/cedric-charlesia/technical-tests/tree/master/fibonacci"
+                            target="_blank" class="py-2 px-2 text-gray-700 font-bold hover:text-cyan-600">Code
+                            Source</a>
+                    </div>
+
+                    <!-- Mobile Nav -->
+
+                    <div class="md:hidden flex items-center">
+                        <button class="mobile-menu-button text-cyan-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Menu -->
+
+            <div class="mobile-menu hidden md:hidden uppercase">
+                <a href="fibonacci.html" class="block py-2 px-4 hover:bg-gray-200">Le challenge</a>
+                <a href="https://github.com/cedric-charlesia/technical-tests/tree/master/fibonacci" target="_blank"
+                    class="block py-2 px-4 hover:bg-gray-200">Code Source</a>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+
+        <main class="px-4">
+            <div class="pt-5 pb-4 space-y-4">
+                <div>
+                    <h1 class="font-bold text-3xl text-center">
+                        Somme des nombres pairs de la suite de Fibonacci
+                    </h1>
+                </div>
+
+                <div class="leading-6 flex flex-col gap-2">
+                    <p>
+                        Leonardo Fibonacci était un mathématicien italien connu notamment par la suite de Fibonacci.
+                    </p>
+
+                    <p>
+                        Dans cette suite, chaque nouveau terme est généré par l'addition des deux termes précédents.
+                    </p>
+
+                    <p>
+                        En commençant par 1 et 2, les 10 premiers termes sont : <span class="font-bold">1, 2, 3, 5, 8,
+                            13, 21, 34, 55, 89</span>
+                    </p>
+
+                    <p>Mais quelle serait la somme des nombres pairs de ces termes... 🤔 ?</p>
+
+                </div>
+
+                <div class="text-center space-y-4">
+                    <button>
+                        <a class="font-bold text-white bg-cyan-600 hover:bg-cyan-800 px-2 py-1 rounded-lg uppercase"
+                            href="fibonacci.html">
+                            Essayer</a>
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class=""></footer>
+    </div>
+</body>
+
+</html>
